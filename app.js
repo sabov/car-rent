@@ -31,3 +31,11 @@ $$(".item-inner").on("click", function () {
 $$(window).on("click", function () {
   $$(".list-block-search").hide();
 });
+
+$$(".button").on("click", function () {
+  $$(".back").show();
+});
+
+$$(".back").on("click", function () {
+  $$(".back").hide();
+});

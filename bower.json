@@ -14,6 +14,7 @@
     "tests"
   ],
   "dependencies": {
-    "framework7": "~1.0.6"
+    "framework7": "~1.0.6",
+    "fontawesome": "~4.3.0"
   }
 }

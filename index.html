@@ -8,6 +8,7 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <!-- Your app title -->
     <title>Enterprise</title>
+    <link rel="stylesheet" href="./bower_components/fontawesome/css/font-awesome.min.css">
     <!-- Path to Framework7 Library CSS-->
     <link rel="stylesheet" href="./bower_components/framework7/dist/css/framework7.min.css">
     <!-- Path to your custom app styles-->
@@ -16,7 +17,7 @@
       .page__title {
         font-size: 18px;
         font-weight: bold;
-        margin-top: 20px;
+        margin-top: 15px;
       }
       .page__text {
         color: #666;
@@ -73,6 +74,7 @@
       }
       .back {
         color: #666;
+        display: none;
       }
 
     </style>
@@ -96,7 +98,7 @@
         <div class="navbar">
           <div class="navbar-inner">
             <div class="left">
-               <a href="#index" class="back"> Go back </a>
+               <a href="#index" class="back"> <i class="fa fa-chevron-left"></i> Go back </a>
             </div>
             <!-- We need cool sliding animation on title element, so we have additional "sliding" class -->
             <div class="center sliding">Enterprise</div>
@@ -213,9 +215,9 @@
 
 
           <!-- About page -->
-          <div class="page" data-page="results">
+          <div class="page cached" data-page="results">
             <div class="page-content">
-              <div class="content-block-title page__titl">Pick a Vehicle</div>
+              <div class="content-block-title page__title">Pick a Vehicle</div>
               <div class="list-block media-list">
                 <ul class="results">
                   <li>
