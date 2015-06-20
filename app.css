@@ -65,6 +65,7 @@
   color: #999;
 }
 .back {
+  opacity: 0;
   color: #666;
 }
 .item-media img {
