@@ -1,0 +1,72 @@
+.page__title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 15px;
+}
+.page__text {
+  color: #666;
+}
+.delimiter {
+  text-align: center;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+.delimiter__text-holder {
+  position: absolute;
+  left: 50%;
+  margin-top: -15px;
+}
+.delimiter__text {
+  margin-left: -100%;
+  background-color: #efeff4;
+  font-size: 16px;
+  padding: 5px 10px;
+  text-transform: uppercase;
+  font-weight: 300;
+  display: inline-block;
+  color: #333;
+}
+.delimiter__line {
+  height: 1px;
+  background-color: #BBB;
+}
+.page__block {
+  padding: 0 10px;
+}
+.button {
+  margin-bottom: 10px;
+}
+.item-media img {
+  width: 120px;
+}
+.price {
+  text-align: right;
+}
+.price__amount {
+  font-size: 24px;
+  line-height: 24px;
+}
+.price__info {
+  font-size: 10px;
+  line-height: 10px;
+  text-align: left;
+  margin-left: -2px;
+  display: inline-block;
+}
+.price__total {
+  font-size: 11px;
+}
+.results .item-title {
+  font-size: 16px;
+  white-space: normal;
+}
+.results .item-subtitle {
+  font-size: 11px;
+  color: #999;
+}
+.back {
+  color: #666;
+}
+.item-media img {
+  width: 20vw;
+}
