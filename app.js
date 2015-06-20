@@ -32,10 +32,10 @@ $$(window).on("click", function () {
   $$(".list-block-search").hide();
 });
 
-$$(".button").on("click", function () {
-  $$(".back").show();
+$$(document).on('pageBeforeAnimation', '.page[data-page="index"]', function (e) {
+  $$(".back").css("opacity", 0);
 });
 
-$$(".back").on("click", function () {
-  $$(".back").hide();
+$$(document).on('pageBeforeAnimation', '.page[data-page="results"]', function (e) {
+  $$(".back").css("opacity", 1);
 });
