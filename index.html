@@ -12,6 +12,44 @@
     <link rel="stylesheet" href="./bower_components/framework7/dist/css/framework7.min.css">
     <!-- Path to your custom app styles-->
     <link rel="stylesheet" href="path/to/my-app.css">
+    <style>
+      .page__title {
+        font-size: 18px;
+        font-weight: bold;
+        margin-top: 15px;
+      }
+      .page__text {
+        color: #666;
+      }
+      .delimiter {
+        text-align: center;
+        margin-top: 25px;
+        margin-bottom: 25px;
+      }
+      .delimiter__text-holder {
+        position: absolute;
+        left: 50%;
+        margin-top: -15px;
+      }
+      .delimiter__text {
+        margin-left: -100%;
+        background-color: #efeff4;
+        font-size: 16px;
+        padding: 5px 10px;
+        text-transform: uppercase;
+        font-weight: 300;
+        display: inline-block;
+        color: #333;
+      }
+      .delimiter__line {
+        height: 1px;
+        background-color: #BBB;
+      }
+      .switch-holder {
+        padding: 0 10px;
+      }
+
+    </style>
   </head>
   <body>
     <!-- Status bar overlay for full screen mode (PhoneGap) -->
@@ -48,32 +86,88 @@
           <div data-page="index" class="page">
             <!-- Scrollable page content -->
             <div class="page-content">
-              <div class="content-block-title">Rent a car in 66 countries</div>
+              <div class="content-block-title page__title">Rent a car in 66 countries</div>
               <!-- Search bar -->
-              <form class="searchbar">
-                  <div class="searchbar-input">
-                      <input type="search" placeholder="Location">
-                      <a href="#" class="searchbar-clear"></a>
-                  </div>
-                  <a href="#" class="searchbar-cancel">Cancel</a>
-              </form>
-              <div class="content-block searchbar-not-found">
-                      Nothing found
+              <div class="delimiter">
+                <div class="delimiter__text-holder">
+                  <div class="delimiter__text"> Choose location</div>
+                </div>
+                <div class="delimiter__line"></div>
               </div>
-              <div class="list-block list-block-search searchbar-found" style="display: none">
+              <div class="card">
+                <div class="card-content">
+                  <form class="searchbar">
+                      <div class="searchbar-input">
+                          <input type="search" placeholder="Location">
+                          <a href="#" class="searchbar-clear"></a>
+                      </div>
+                      <a href="#" class="searchbar-cancel">Cancel</a>
+                  </form>
+                  <div class="content-block searchbar-not-found">
+                          Nothing found
+                  </div>
+                  <div class="list-block list-block-search searchbar-found" style="display: none">
+                    <ul>
+                      <li class="item-content">
+                        <div class="item-inner">
+                          <div class="item-title">Acura </div>
+                        </div>
+                      </li>
+                      <li class="item-content">
+                        <div class="item-inner">
+                          <div class="item-title">Audi</div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="switch-holder">
+                <label class="label-switch">
+                  <input type="checkbox">
+                  <div class="checkbox"></div>
+                </label>
+                <span class="page__text">Return to a different location</span>
+              </div>
+              <div class="delimiter">
+                <div class="delimiter__text-holder">
+                  <div class="delimiter__text"> Set date </div>
+                </div>
+                <div class="delimiter__line"></div>
+              </div>
+              <div class="content-block-title">From</div>
+              <div class="list-block">
                 <ul>
-                  <li class="item-content">
-                    <div class="item-inner">
-                      <div class="item-title">Acura </div>
-                    </div>
-                  </li>
-                  <li class="item-content">
-                    <div class="item-inner">
-                      <div class="item-title">Audi</div>
+                  <li>
+                    <div class="item-content">
+                      <div class="item-inner">
+                        <div class="item-input">
+                          <input type="text" placeholder="Your birth date" readonly id="calendar-from">
+                        </div>
+                      </div>
                     </div>
                   </li>
                 </ul>
               </div>
+              <div class="content-block-title">To</div>
+              <div class="list-block">
+                <ul>
+                  <li>
+                    <div class="item-content">
+                      <div class="item-inner">
+                        <div class="item-input">
+                          <input type="text" placeholder="Your birth date" readonly id="calendar-to">
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="content-block">
+                <a href="#" class="button button-big button-round active">Search</a>
+              </div>
+
 
             </div>
           </div>

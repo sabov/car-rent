@@ -15,8 +15,18 @@ var mySearchbar = myApp.searchbar('.searchbar', {
     searchIn: '.item-title'
 });
 
+var calendarFrom = myApp.calendar({
+    input: '#calendar-from'
+});
+
+var calendarFrom = myApp.calendar({
+    input: '#calendar-to'
+});
+
 $$(".item-inner").on("click", function () {
-  console.log(this);
   $$(".searchbar-input input").val($$(this).find(".item-title").text());
+});
+
+$$(window).on("click", function () {
   $$(".list-block-search").hide();
 });
