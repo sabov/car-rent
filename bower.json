@@ -1,0 +1,19 @@
+{
+  "name": "car-rent",
+  "version": "0.0.0",
+  "homepage": "https://github.com/sabov/car-rent",
+  "authors": [
+    "Oleksandr Sabov <alexsabov@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "framework7": "~1.0.6"
+  }
+}
